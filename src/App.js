@@ -182,7 +182,7 @@ function App() {
         DEL
       </button>
       {buttons.map((button) => {
-        if (isNaN(button)) {
+        if (isNaN(button) && button !== ".") {
           return (
             <OperationButton
               key={button}
